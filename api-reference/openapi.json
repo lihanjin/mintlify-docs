@@ -29,8 +29,8 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and data fields. See request example.",
-            "schema": { "type": "string" }
+            "description": "URL-encoded JSON string containing trace and data fields.",
+            "schema": { "type": "string", "example": "{\"trace\":\"abc-123\",\"data\":{\"code\":\"700.HK\",\"kline_type\":1,\"kline_timestamp_end\":0,\"query_kline_num\":2,\"adjust_type\":0}}" }
           }
         ],
         "responses": {
@@ -63,7 +63,7 @@
             "in": "query",
             "required": true,
             "description": "URL-encoded JSON string containing trace and data fields.",
-            "schema": { "type": "string" }
+            "schema": { "type": "string", "example": "{\"trace\":\"abc-123\",\"data\":{\"code\":\"BTCUSDT\",\"kline_type\":1,\"kline_timestamp_end\":0,\"query_kline_num\":2,\"adjust_type\":0}}" }
           }
         ],
         "responses": {
@@ -96,7 +96,16 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/BatchKlineRequest" }
+              "schema": { "$ref": "#/components/schemas/BatchKlineRequest" },
+              "example": {
+                "trace": "abc-123",
+                "data": {
+                  "data_list": [
+                    { "code": "700.HK", "kline_type": 1, "kline_timestamp_end": 0, "query_kline_num": 2, "adjust_type": 0 },
+                    { "code": "AAPL.US", "kline_type": 8, "kline_timestamp_end": 0, "query_kline_num": 2, "adjust_type": 0 }
+                  ]
+                }
+              }
             }
           }
         },
@@ -130,7 +139,16 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/BatchKlineRequest" }
+              "schema": { "$ref": "#/components/schemas/BatchKlineRequest" },
+              "example": {
+                "trace": "abc-123",
+                "data": {
+                  "data_list": [
+                    { "code": "BTCUSDT", "kline_type": 1, "kline_timestamp_end": 0, "query_kline_num": 2, "adjust_type": 0 },
+                    { "code": "ETHUSDT", "kline_type": 8, "kline_timestamp_end": 0, "query_kline_num": 2, "adjust_type": 0 }
+                  ]
+                }
+              }
             }
           }
         },
@@ -164,7 +182,7 @@
             "in": "query",
             "required": true,
             "description": "URL-encoded JSON string containing trace and symbol_list.",
-            "schema": { "type": "string" }
+            "schema": { "type": "string", "example": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"700.HK\"},{\"code\":\"AAPL.US\"}]}}" }
           }
         ],
         "responses": {
@@ -197,7 +215,7 @@
             "in": "query",
             "required": true,
             "description": "URL-encoded JSON string containing trace and symbol_list.",
-            "schema": { "type": "string" }
+            "schema": { "type": "string", "example": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"BTCUSDT\"},{\"code\":\"ETHUSDT\"}]}}" }
           }
         ],
         "responses": {
@@ -230,7 +248,7 @@
             "in": "query",
             "required": true,
             "description": "URL-encoded JSON string containing trace and symbol_list.",
-            "schema": { "type": "string" }
+            "schema": { "type": "string", "example": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"700.HK\"},{\"code\":\"AAPL.US\"}]}}" }
           }
         ],
         "responses": {
@@ -263,7 +281,7 @@
             "in": "query",
             "required": true,
             "description": "URL-encoded JSON string containing trace and symbol_list.",
-            "schema": { "type": "string" }
+            "schema": { "type": "string", "example": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"BTCUSDT\"},{\"code\":\"ETHUSDT\"}]}}" }
           }
         ],
         "responses": {
