@@ -1,8 +1,8 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "AllTick Market Data API",
-    "description": "Real-time and historical market data API for stocks, forex, cryptocurrencies, and commodities.",
+    "title": "AllTick 行情数据 API",
+    "description": "股票、外汇、加密货币和商品的实时及历史行情数据API。",
     "version": "1.0.0"
   },
   "servers": [
@@ -22,7 +22,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -33,7 +33,7 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and data fields.",
+            "description": "URL编码的JSON字符串，包含trace和data字段。",
             "schema": {
               "type": "string",
               "default": "{\"trace\":\"abc-123\",\"data\":{\"code\":\"700.HK\",\"kline_type\":1,\"kline_timestamp_end\":0,\"query_kline_num\":2,\"adjust_type\":0}}"
@@ -43,7 +43,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -65,7 +65,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -76,7 +76,7 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and data fields.",
+            "description": "URL编码的JSON字符串，包含trace和data字段。",
             "schema": {
               "type": "string",
               "default": "{\"trace\":\"abc-123\",\"data\":{\"code\":\"BTCUSDT\",\"kline_type\":1,\"kline_timestamp_end\":0,\"query_kline_num\":2,\"adjust_type\":0}}"
@@ -86,7 +86,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -108,7 +108,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -149,7 +149,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -171,7 +171,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -212,7 +212,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -234,7 +234,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -245,7 +245,7 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and symbol_list.",
+            "description": "URL编码的JSON字符串，包含trace和symbol_list字段。",
             "schema": {
               "type": "string",
               "default": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"700.HK\"},{\"code\":\"AAPL.US\"}]}}"
@@ -255,7 +255,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -277,7 +277,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -288,7 +288,7 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and symbol_list.",
+            "description": "URL编码的JSON字符串，包含trace和symbol_list字段。",
             "schema": {
               "type": "string",
               "default": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"BTCUSDT\"},{\"code\":\"ETHUSDT\"}]}}"
@@ -298,7 +298,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -320,7 +320,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -331,7 +331,7 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and symbol_list.",
+            "description": "URL编码的JSON字符串，包含trace和symbol_list字段。",
             "schema": {
               "type": "string",
               "default": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"700.HK\"},{\"code\":\"AAPL.US\"}]}}"
@@ -341,7 +341,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -363,7 +363,7 @@
             "name": "token",
             "in": "query",
             "required": true,
-            "description": "Your API authentication token",
+            "description": "您的API认证Token",
             "schema": {
               "type": "string",
               "default": "YOUR_TOKEN_HERE"
@@ -374,7 +374,7 @@
             "name": "query",
             "in": "query",
             "required": true,
-            "description": "URL-encoded JSON string containing trace and symbol_list.",
+            "description": "URL编码的JSON字符串，包含trace和symbol_list字段。",
             "schema": {
               "type": "string",
               "default": "{\"trace\":\"abc-123\",\"data\":{\"symbol_list\":[{\"code\":\"BTCUSDT\"},{\"code\":\"ETHUSDT\"}]}}"
@@ -384,7 +384,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "成功响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -404,26 +404,26 @@
         "properties": {
           "ret": {
             "type": "integer",
-            "description": "Return code (200 = success)"
+            "description": "返回码（200 = 成功）"
           },
           "msg": {
             "type": "string",
-            "description": "Response message"
+            "description": "响应消息"
           },
           "trace": {
             "type": "string",
-            "description": "Request trace ID"
+            "description": "请求追踪ID"
           },
           "data": {
             "type": "object",
             "properties": {
               "code": {
                 "type": "string",
-                "description": "Product code"
+                "description": "产品代码"
               },
               "kline_type": {
                 "type": "integer",
-                "description": "K-line type (1=1min, 2=5min, 3=15min, 4=30min, 5=1hour, 6=2hour, 7=4hour, 8=daily, 9=weekly, 10=monthly)"
+                "description": "K线类型（1=1分钟, 2=5分钟, 3=15分钟, 4=30分钟, 5=小时, 6=2小时, 7=4小时, 8=日K, 9=周K, 10=月K）"
               },
               "kline_list": {
                 "type": "array",
@@ -432,31 +432,31 @@
                   "properties": {
                     "timestamp": {
                       "type": "string",
-                      "description": "K-line timestamp"
+                      "description": "K线时间戳"
                     },
                     "open_price": {
                       "type": "string",
-                      "description": "Open price"
+                      "description": "开盘价"
                     },
                     "close_price": {
                       "type": "string",
-                      "description": "Close price"
+                      "description": "收盘价"
                     },
                     "high_price": {
                       "type": "string",
-                      "description": "High price"
+                      "description": "最高价"
                     },
                     "low_price": {
                       "type": "string",
-                      "description": "Low price"
+                      "description": "最低价"
                     },
                     "volume": {
                       "type": "string",
-                      "description": "Volume"
+                      "description": "成交量"
                     },
                     "turnover": {
                       "type": "string",
-                      "description": "Turnover"
+                      "description": "成交额"
                     }
                   }
                 }
@@ -474,7 +474,7 @@
         "properties": {
           "trace": {
             "type": "string",
-            "description": "Unique trace ID for request tracking"
+            "description": "唯一追踪ID，用于请求追踪"
           },
           "data": {
             "type": "object",
@@ -496,23 +496,23 @@
                   "properties": {
                     "code": {
                       "type": "string",
-                      "description": "Product code"
+                      "description": "产品代码"
                     },
                     "kline_type": {
                       "type": "integer",
-                      "description": "K-line type (1=1min, 2=5min, 3=15min, 4=30min, 5=1hour, 6=2hour, 7=4hour, 8=daily, 9=weekly, 10=monthly)"
+                      "description": "K线类型（1=1分钟, 2=5分钟, 3=15分钟, 4=30分钟, 5=小时, 6=2小时, 7=4小时, 8=日K, 9=周K, 10=月K）"
                     },
                     "kline_timestamp_end": {
                       "type": "integer",
-                      "description": "End timestamp (0 = latest)"
+                      "description": "结束时间戳（0 = 最新）"
                     },
                     "query_kline_num": {
                       "type": "integer",
-                      "description": "Number of K-lines to query (max 2 for batch)"
+                      "description": "查询K线数量（批量最大2根）"
                     },
                     "adjust_type": {
                       "type": "integer",
-                      "description": "Adjustment type (0=ex-rights, 1=forward-adjusted)"
+                      "description": "复权类型（0=除权, 1=前复权）"
                     }
                   }
                 }
@@ -605,15 +605,15 @@
                   "properties": {
                     "code": {
                       "type": "string",
-                      "description": "Product code"
+                      "description": "产品代码"
                     },
                     "seq": {
                       "type": "string",
-                      "description": "Quote sequence number"
+                      "description": "报价序号"
                     },
                     "tick_time": {
                       "type": "string",
-                      "description": "Quote timestamp (ms)"
+                      "description": "报价时间戳（毫秒）"
                     },
                     "bids": {
                       "type": "array",
@@ -672,31 +672,31 @@
                   "properties": {
                     "code": {
                       "type": "string",
-                      "description": "Product code"
+                      "description": "产品代码"
                     },
                     "seq": {
                       "type": "string",
-                      "description": "Sequence number"
+                      "description": "序号"
                     },
                     "tick_time": {
                       "type": "string",
-                      "description": "Timestamp (ms)"
+                      "description": "时间戳（毫秒）"
                     },
                     "price": {
                       "type": "string",
-                      "description": "Trade price"
+                      "description": "成交价"
                     },
                     "volume": {
                       "type": "string",
-                      "description": "Trade volume"
+                      "description": "成交量"
                     },
                     "turnover": {
                       "type": "string",
-                      "description": "Trade turnover"
+                      "description": "成交额"
                     },
                     "trade_direction": {
                       "type": "integer",
-                      "description": "Trade direction (0=neutral, 1=buy, 2=sell)"
+                      "description": "交易方向（0=中性盘, 1=主动买入, 2=主动卖出）"
                     }
                   }
                 }
