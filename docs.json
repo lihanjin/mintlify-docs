@@ -18,7 +18,11 @@
         "label": "AllTick",
         "href": "https://alltick.co"
       }
-    ]
+    ],
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api"
+    }
   },
   "api": {
     "baseUrl": "https://quote.alltick.co",
